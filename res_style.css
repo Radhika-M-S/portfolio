@@ -1,0 +1,116 @@
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+html,body{
+    height: 100%;
+}
+body{
+    background-color: aliceblue;
+}
+.resume header::before{
+    background: url(./lap.jpg);
+    background-size: cover;
+    display: block;
+    height: 375px;
+    width: 100%;
+    content: "";
+    }
+.resume{
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+   .hbody{
+    padding-left: 5%;
+    padding-right: 5%;
+   } 
+ h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+ }
+.download-link
+{
+    background: rgba(71, 205, 229, 0.873);
+    color: rgba(12, 15, 10, 0.845);
+    text-decoration: none;
+    float: right;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    padding: 5px;
+    
+    
+}
+.index
+{
+    background: rgba(71, 205, 229, 0.873);
+    color: rgba(12, 15, 10, 0.845);
+    text-decoration: none;
+    float: left;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    padding: 5px;
+    
+    
+}
+
+.resume-section{
+    background-color: rgba(192, 219, 242, 0.526);
+    margin-bottom: 50px;
+    padding: 10px;
+    border-radius: 15px;
+}
+.resume-section h2{
+    border-bottom: 2px dashed #908a8a;
+}
+
+.project-items{
+    display: flow-root
+}
+.project-items img{
+    width: 300px;
+    height: 200px;
+    float: left;
+    margin-right: 0%;
+    padding: 9px;
+    
+}
+p{
+    padding-right: 24%;
+}
+
+
+/*footer--*/
+footer{
+    background-color: rgba(16, 16, 7, 0.629);
+    color: aliceblue;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        
+}
+
+
+.socials{
+    list-style-type: none;
+    padding: 0;
+}
+.socials li{
+    display: inline;
+}
+.socials img{
+    width: 30px;
+    padding-right: 9px;
+}
+
+
+
+.work-item{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}

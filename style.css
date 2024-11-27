@@ -1,0 +1,77 @@
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+html,body{
+    height: 100%;
+}
+body {
+    background: #f6f6f6; 
+    margin: 0;
+}
+
+.home{
+    background: url(./bg-home-office-studio.jpg);
+    background-size: cover;
+   display: flex;
+   flex-direction: column;
+}
+.home .content-wrapper {
+    flex: 1 0 auto;
+}
+.content-wrapper{
+    padding-top: 5%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.container {
+    background: rgba(205, 186, 186, 0.833);
+    padding: 30px;
+    border-radius: 18px;
+}
+.span{
+    padding-left: 20%;
+}
+
+
+
+.btn{
+    background: rgba(38, 24, 231, 0.525);
+    color: rgb(254, 242, 242);
+    text-decoration: none;
+    padding: 7px;
+    border-radius: 4px;
+    
+}
+a:hover {
+    color: #f17827ef;
+}
+
+
+
+.footer{
+    background-color: rgba(16, 16, 7, 0.629);
+    color: aliceblue;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        
+}
+footer a:hover {
+    color: #3c8453;
+}
+
+.socials{
+    list-style-type: none;
+    padding: 0;
+}
+.socials li{
+    display: inline;
+}
+.socials img{
+    width: 30px;
+    padding-right: 9px;
+}
