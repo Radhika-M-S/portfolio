@@ -1,0 +1,217 @@
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+html,body{
+    height: 100%;
+}
+body {
+    background: #f6f6f6; 
+    margin: 0;
+}
+.image img{
+    background-size: cover;
+    min-width: 100%;
+    height: 375px;
+}
+
+/*.resume header::before{
+    
+    background-size: cover;
+    display: block;
+    height: 375px;
+    width: 100%;
+    content: "";
+    }*/
+.resume{
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+   .hbody{
+    padding-left: 15%;
+    padding-right: 15%;
+   } 
+ h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+ }
+.download-link
+{
+    background: rgba(71, 205, 229, 0.873);
+    color: rgba(12, 15, 10, 0.845);
+    text-decoration: none;
+    float: right;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    padding: 5px;
+    
+    
+}
+
+@media screen and (max-width: 1200px){
+    .download-link {
+        position: absolute;
+    }
+}
+@media screen and (max-width: 1200px){
+    .index {
+        position: absolute;
+    }
+}
+
+
+.index
+{
+    background: rgba(71, 205, 229, 0.873);
+    color: rgba(12, 15, 10, 0.845);
+    text-decoration: none;
+    float: left;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    padding: 5px;
+    
+    
+}
+
+.resume-section{
+    background-color: rgba(205, 224, 240, 0.526);
+    margin-bottom: 50px;
+    padding: 10px;
+    border-radius: 15px;
+}
+.resume-section h2{
+    border-bottom: 2px dashed #908a8a;
+}
+
+.project-items{
+    display: flow-root;
+   
+}
+.project-items img{
+    width: 300px;
+    height: 180px;
+    float: left;
+    margin-right: 0%;
+    padding: 15px;
+    
+}
+
+
+h1,h2,h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+h1{
+    text-align: center;
+    font-size: 48px;
+}
+p,ul{
+   
+    padding-right: 20%;
+    padding-left: 5%;
+}
+li,p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem; 
+}
+.education h3{
+    padding-left: 3%;
+}
+h2{
+    font-size: 2.0rem;
+    padding-left: 2%;
+}
+h3{
+    font-size: 1.8;
+}
+
+
+
+@media screen and (min-width:860px) {
+    .project-items {
+        display: flow-root;
+    }
+    .project-items img {
+        float: left;
+        margin-right: 20px;
+    }
+}
+@media screen and (min-width:650px) and (max-width:859px) {
+    .project-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+    }
+    .project-items img {
+        width: 100%;
+    }
+}
+@media screen and (max-width:500px){
+    .project-items img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+.education-item {
+    margin: 30px 0;
+}
+.education-item p {
+    margin: 0;
+}
+
+.home{
+    background: url(./bg-home-office-studio.jpg);
+    background-size: cover;
+   display: flex;
+   flex-direction: column;
+}
+.home .content-wrapper {
+    flex: 1 0 auto;
+}
+.footer{
+    background-color: rgba(16, 16, 7, 0.629);
+    color: aliceblue;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        
+}
+.footer a:hover {
+    color: #3c8453;
+}
+
+.socials{
+    list-style-type: none;
+    padding: 0;
+}
+.socials li{
+    display: inline;
+}
+.socials img{
+    width: 30px;
+    padding-right: 9px;
+}
+@media screen and (min-width: 560px){
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width: 559px){
+    .footer {
+        text-align: center;
+        padding: 10px;
+    }
+
+}
+
